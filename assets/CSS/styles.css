@@ -15,13 +15,13 @@
 :root{
     --body-font: 'Poppins', sans-serif;
     --big-font-size: 2.5em;
-    --h2-font-size: 1rem;
+    --h2-font-size: 2rem;
     --normal-font-size: 0.938rem;
 }
 @media screen and (min-width: 768px){
     :root{
         --big-font-size: 2rem;
-        --h2-font-size: 2rem;
+        --h2-font-size: 1.5rem;
         --normal-font-size: 1rem;
     }
 }
@@ -84,10 +84,10 @@ img{
     position: absolute;
    
     content: "";
-    width: 64px; height: 0.18rem;
+    width: 74px; height: 0.18rem;
     left: 0; right: 0;
     margin: auto;
-    top: 2rem;
+    top: 3rem;
     background-color: var(--first-color);
 }
 .section{
@@ -241,4 +241,23 @@ img{
 }
 .button:hover{
     box-shadow: 0 10px 36px rgb(0,0,0,.15);
+}
+/* ABOUT */
+@media screen and (max-width: 768px){
+    .about {
+        /* border:2px solid red; */
+        margin-top: 45%;
+    }
+}
+.about__container {
+    row-gap: 2rem;
+    text-align: center;
+    
+}
+
+.about__subtitle{
+    margin-bottom: var(--mb-2);
+}
+.about__img{
+    justify-self: center;
 }
